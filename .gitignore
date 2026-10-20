@@ -8,3 +8,4 @@ build/
 
 # Setări editor
 .vscode/
+secrets.txt
