@@ -7,3 +7,4 @@
 #define SERIAL_BAUD 9600       // viteza portului serial
 
 #endif
+#define LED_PIN 13 // LED de stare
