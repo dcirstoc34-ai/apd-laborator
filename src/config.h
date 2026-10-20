@@ -8,3 +8,4 @@
 
 #endif
 #define LED_PIN 13 // LED de stare
+#define SERIAL_BAUD 19200
