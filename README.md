@@ -20,3 +20,7 @@ Parolele și cheile de acces nu se stochează în git pentru a preveni scurgeril
 | Senzor | Interfață | Domeniu |
 |---|---|---|
 | TMP36 | Analogic (A0) | -40°C +125°C |s
+
+## Notițe Proiect
+- Frecvența de eșantionare recomandată este de 100 ms.
+- Toate datele citite vor fi salvate local înainte de procesare.
