@@ -39,4 +39,17 @@ stateDiagram-v2
     SAMPLING --> ALARM : T_medie > Prag_Max (ex. 50°C)
     ALARM --> SAMPLING : T_medie <= Prag_Max
     ALARM --> IDLE : Primire comanda STOP
+
+
+    ## 4. Automatul de stări (State Machine)
+Sistemul de achiziție funcționează pe baza a 3 stări principale:
+
+```mermaid
+stateDiagram-v2
+    [*] --> IDLE
+    IDLE --> SAMPLING : Comandă START
+    SAMPLING --> IDLE : Comandă STOP
+    SAMPLING --> ALARM : Temperatură > Prag (ex: 45°C)
+    ALARM --> SAMPLING : Scădere sub prag
+    ALARM --> IDLE : Comandă STOP
 ```
