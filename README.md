@@ -15,3 +15,8 @@ Parolele și cheile de acces nu se stochează în git pentru a preveni scurgeril
 ## Parametri de sistem
 - Perioada de eșantionare: 500 ms
 - Status LED: GPIO 2
+
+## Senzori utilizați
+| Senzor | Interfață | Domeniu |
+|---|---|---|
+| TMP36 | Analogic (A0) | -40°C +125°C |s
