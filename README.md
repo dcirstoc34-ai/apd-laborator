@@ -15,3 +15,7 @@ Parolele și cheile de acces nu se stochează în git pentru a preveni scurgeril
 ## Parametri de sistem
 - Perioada de eșantionare: 500 ms
 - Status LED: GPIO 2
+
+## Notițe Proiect
+- Frecvența de eșantionare recomandată este de 100 ms.
+- Toate datele citite vor fi salvate local înainte de procesare.
