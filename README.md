@@ -88,3 +88,18 @@ timestamp_ms, raw_adc, voltage_v, temp_c
 - [x] Configurare repository și .gitignore
 - [x] Redactare specificație hardware în Markdown
 - [ ] Simulare circuit în Tinkercad Circuits
+
+
+## 3.1. Filtrarea numerică
+Pentru a reduce zgomotul de pe senzor, implementăm un filtru de medie mobilă pe $M$ eșantioane. Ecuația mediei aritmetice este:
+
+$$y[n] = \frac{1}{M} \sum_{k=0}^{M-1} x[n-k]$$
+
+Implementarea în limbajul C++ a buclei de calcul:
+
+```cpp
+float calculMedieMobila(int valoareNoua) {
+    float suma = 0.0f;
+    // ... adăugare eșantioane în buffer ...
+    return suma / M;
+}
